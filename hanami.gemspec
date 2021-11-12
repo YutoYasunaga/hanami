@@ -14,6 +14,10 @@ Gem::Specification.new do |spec|
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
+
+  puts 'Unzip dic.tar.gz...'
+  `cd dic && tar xzvf dic.tar.gz`
+
   ['ipadic-utf8', 'unidic-utf8', 'juman-utf8'].each do |dicdir|
     spec.files << "dic/#{dicdir}"
     ['AUTHORS','char.bin','COPYING','dicrc','matrix.bin','sys.dic','unk.dic','version'].each do |dicfile|
