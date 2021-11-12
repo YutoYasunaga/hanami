@@ -87,17 +87,34 @@ puts Hanami.to_ascii(japanese, :dic => :ipadic, :add_unihan_info => true)
 Installing & Links
 ------------------
 
-Installing should be pretty straigh-forward. 
+- First you must install required library:
 
-- Install `apt-get install libmecab-dev`
+**Mac OS**
 
-- Uncompress the dictionary files in ./dic/dic.tar.gz first.
+```
+brew install mecab mecab-ipadic
+```
 
-- Build & install gem.
+**Ubuntu**
 
-```bash
-$ gem build hanami.gemspec
-$ gem install hanami-0.0.3.gem
+```
+sudo apt-get install libmecab-dev
+```
+
+- Then use `specific_install`, this gem allows you you to install a gem from its github repository
+
+```
+gem install specific_install
+```
+
+```
+gem specific_install git@github.com:YutoYasunaga/hanami.git
+```
+
+- If you are using Ruby on Rails, add it in your Gemfile
+
+```ruby:Gemfile
+gem 'hanami', git: 'git@github.com:YutoYasunaga/hanami.git'
 ```
 
 - Load gem with
