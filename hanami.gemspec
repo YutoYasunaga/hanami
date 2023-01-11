@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
     spec.files << "dic/#{dicdir}"
     ['AUTHORS','char.bin','COPYING','dicrc','matrix.bin','sys.dic','unk.dic','version'].each do |dicfile|
       file = "dic/#{dicdir}/#{dicfile}"
-      if !File.exists?(file)
+      if !File.exist?(file)
         puts "Make sure you extract the dictionary files in ./dic/dic.tar.gz first!"
         exit
       end
@@ -35,7 +35,7 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "moji", "~> 1.6"
   spec.add_runtime_dependency "mecab", "~> 0.996", '>= 0.996'
-  spec.add_development_dependency "bundler", "~> 1.3"
+  spec.add_development_dependency "bundler", "~> 2.4"
   spec.add_development_dependency "rake", '~> 13.0', '>= 13.0.0'
-  spec.add_development_dependency "rspec", '~> 2.13', '>= 2.13.0'
+  spec.add_development_dependency "rspec", '~> 3.12'
 end
