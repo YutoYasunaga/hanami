@@ -1,9 +1,9 @@
 PATH
   remote: .
   specs:
-    hanami (0.0.3)
-      mecab (~> 0.996, >= 0.996)
-      moji (~> 1.6)
+    hanami (0.0.5)
+      mecab
+      moji
 
 GEM
   remote: https://rubygems.org/
@@ -16,12 +16,12 @@ GEM
       rspec-core (~> 3.12.0)
       rspec-expectations (~> 3.12.0)
       rspec-mocks (~> 3.12.0)
-    rspec-core (3.12.0)
+    rspec-core (3.12.2)
       rspec-support (~> 3.12.0)
-    rspec-expectations (3.12.2)
+    rspec-expectations (3.12.3)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.12.0)
-    rspec-mocks (3.12.2)
+    rspec-mocks (3.12.5)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.12.0)
     rspec-support (3.12.0)
@@ -30,10 +30,10 @@ PLATFORMS
   arm64-darwin-22
 
 DEPENDENCIES
-  bundler (~> 2.4)
+  bundler
   hanami!
-  rake (~> 13.0, >= 13.0.0)
-  rspec (~> 3.12)
+  rake
+  rspec
 
 BUNDLED WITH
-   2.4.3
+   2.4.10

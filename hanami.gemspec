@@ -33,9 +33,9 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(tests|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency "moji", "~> 1.6"
-  spec.add_runtime_dependency "mecab", "~> 0.996", '>= 0.996'
-  spec.add_development_dependency "bundler", "~> 2.4"
-  spec.add_development_dependency "rake", '~> 13.0', '>= 13.0.0'
-  spec.add_development_dependency "rspec", '~> 3.12'
+  spec.add_runtime_dependency "moji"
+  spec.add_runtime_dependency "mecab"
+  spec.add_development_dependency "bundler"
+  spec.add_development_dependency "rake"
+  spec.add_development_dependency "rspec"
 end
